@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="card-header">
+    Add new FAQ
+  </div>
+  <div class=list-group-item>
+    <form (submit)="addQuestions()" >
+         <div class="form-group">
+           <label for="text" class="ml-5">enter the question</label>
+           <input id="text" type="text" class="form-control" [(ngModel)]="text" name="text">
+         </div>
+      <div class="form-group">
+        <label for="answer" class="ml-5">enter the answer</label>
+        <input id="answer" type="text" class="form-control" [(ngModel)]="answer" name="answer">
+      </div>
+      <input type="submit" value="submit" class="btn btn-primary ml-5">
+    </form>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div  class="question">
+  <div class="card">
+    <div class="card-header">
+      {{question.text}}
+      <a (click)="question.hide = ! question.hide" class="btn btn-primary  ml-2">show</a>
+      <a (click)="removeData(question)" class="btn btn-danger ml-5" >Remove</a>
+    </div>
+
+  </div>
+
+  <div class="card" [hidden]="question.hide" >
+    <div class="list-group-item">
+      {{question.answer}}
+    </div>
+  </div>
+
+  <br>
+
+</div>
